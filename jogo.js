@@ -411,10 +411,11 @@ window.addEventListener('click', function() {
 window.addEventListener('keydown', function(event) {
   if (event.code === 'Space' || event.code === 'KeyW' || event.code === 'ArrowUp') {
     event.preventDefault();   
+    if (telaAtiva.click) {
       telaAtiva.click();
     }
   }
-);
+});
 
 
 mudaParaTela(Telas.INICIO);
