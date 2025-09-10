@@ -409,7 +409,7 @@ window.addEventListener('click', function() {
 });
 
 window.addEventListener('keydown', function(event) {
-  if (event.code === 'Space' || event.code === 'w' || event.code === 'ArrowUp') {
+  if (event.code === 'Space' || event.code === 'KeyW' || event.code === 'ArrowUp') {
     event.preventDefault();   
       telaAtiva.click();
     }
