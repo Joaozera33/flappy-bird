@@ -408,5 +408,14 @@ window.addEventListener('click', function() {
   }
 });
 
+window.addEventListener('keydown', function(event) {
+  if (event.code === 'Space' || event.code === 'w' || event.code === 'ArrowUp') {
+    event.preventDefault();   
+      telaAtiva.click();
+    }
+  }
+);
+
+
 mudaParaTela(Telas.INICIO);
 loop();
